@@ -1711,12 +1711,14 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@flash-cards/services@workspace:packages/services":
+"@flash-cards/services@1.0.0, @flash-cards/services@workspace:packages/services":
   version: 0.0.0-use.local
   resolution: "@flash-cards/services@workspace:packages/services"
   dependencies:
     "@flash-cards/firebase": 1.0.0
     "@flash-cards/repositories": 1.0.0
+    inversify: 5.0.5
+    reflect-metadata: ^0.1.13
     typescript: ^4.7.4
   languageName: unknown
   linkType: soft
@@ -1725,6 +1727,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@flash-cards/ui@workspace:packages/ui"
   dependencies:
+    "@flash-cards/models": 1.0.0
+    "@flash-cards/repositories": 1.0.0
+    "@flash-cards/services": 1.0.0
     "@testing-library/jest-dom": ^5.16.5
     "@testing-library/react": ^13.3.0
     "@testing-library/user-event": ^13.5.0
@@ -6992,6 +6997,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"inversify@npm:5.0.5":
+  version: 5.0.5
+  resolution: "inversify@npm:5.0.5"
+  checksum: a4bf1a6a62cacfeb7f82f85c4c00eea2326cd6e30d5d47582a6323ef8aacc5adc72f9aa3d86c373e27387b4ed37fcab7cfac728cdd5bdb252c6d27f849a151f1
+  languageName: node
+  linkType: hard
+
 "ip@npm:^2.0.0":
   version: 2.0.0
   resolution: "ip@npm:2.0.0"
@@ -10573,6 +10585,13 @@ __metadata:
     indent-string: ^4.0.0
     strip-indent: ^3.0.0
   checksum: fa1ef20404a2d399235e83cc80bd55a956642e37dd197b4b612ba7327bf87fa32745aeb4a1634b2bab25467164ab4ed9c15be2c307923dd08b0fe7c52431ae6b
+  languageName: node
+  linkType: hard
+
+"reflect-metadata@npm:^0.1.13":
+  version: 0.1.13
+  resolution: "reflect-metadata@npm:0.1.13"
+  checksum: 798d379a7b6f6455501145419505c97dd11cbc23857a386add2b9ef15963ccf15a48d9d15507afe01d4cd74116df8a213247200bac00320bd7c11ddeaa5e8fb4
   languageName: node
   linkType: hard
 

@@ -12,7 +12,9 @@
   },
   "dependencies": {
     "@flash-cards/firebase": "1.0.0",
-    "@flash-cards/repositories": "1.0.0"
+    "@flash-cards/repositories": "1.0.0",
+    "inversify": "5.0.5",
+    "reflect-metadata": "^0.1.13"
   },
   "scripts": {
     "build": "yarn tsc --build"
