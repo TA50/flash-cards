@@ -1,6 +1,10 @@
 # flash-cards
 Flash cards application to make learning by repetition easier.
 
+# First startup
+- First install yarn : **npm install -g yarn**
+- install dependencies: **yarn install**
+- build dependencies: **yarn build** 
 # Project Architecure. 
 I am using Yarn workspaces here to split the solutioin into different projcets
 ## @flash-cards/models

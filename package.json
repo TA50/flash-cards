@@ -1,0 +1,14 @@
+{
+  "name": "flash-cards",
+  "packageManager": "yarn@3.2.2",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "yarn wsrun -eyt --report build "
+  },
+  "devDependencies": {
+    "wsrun": "^5.2.4"
+  }
+}
