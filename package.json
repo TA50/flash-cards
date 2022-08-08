@@ -6,6 +6,7 @@
     "packages/*"
   ],
   "scripts": {
+    "start": "yarn workspace @flash-cards/ui start",
     "build": "yarn wsrun -eyt --report build "
   },
   "devDependencies": {
