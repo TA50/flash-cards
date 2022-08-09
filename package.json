@@ -7,7 +7,8 @@
   ],
   "scripts": {
     "start": "yarn workspace @flash-cards/ui start",
-    "build": "yarn wsrun -eyt --report build ",
+    "build-ui": "yarn workspace @flash-cards/ui build",
+    "build": "yarn wsrun -eyt --report -x @flash-cards/ui  build ",
     "lint": "yarn eslint \"**/*.ts\"",
     "format": "yarn prettier --check  \"**/*.ts\"",
     "format-fix": "yarn prettier --write  \"**/*.ts\"",
