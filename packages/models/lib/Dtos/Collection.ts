@@ -1,5 +1,5 @@
 export interface Collection {
-    id: string;
-    name: string;
-    color: string;
+  id: string;
+  name: string;
+  color: string;
 }

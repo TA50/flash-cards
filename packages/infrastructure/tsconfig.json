@@ -14,9 +14,7 @@
     "forceConsistentCasingInFileNames": true,
     "declaration": true,
     "types": [
-      "reflect-metadata"
+      "node"
     ],
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true
   }
 }

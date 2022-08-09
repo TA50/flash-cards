@@ -1,10 +1,10 @@
 export enum Result {
-    Correct = "Correct",
-    Fail = "Fail"
+  Correct = "Correct",
+  Fail = "Fail",
 }
 
 export interface Occurrence {
-    result: Result;
-    occurredAt: Date;
-    cardId: string;
+  result: Result;
+  occurredAt: Date;
+  cardId: string;
 }

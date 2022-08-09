@@ -1,4 +1,2 @@
-export interface ServicesTest {
-    name: string;
-    age: number;
-}
+export * from "./Storage";
+export * from "./config";

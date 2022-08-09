@@ -1,1 +1,1 @@
-export interface Firebase { };
+export * from "./config";

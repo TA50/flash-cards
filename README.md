@@ -34,16 +34,12 @@ Contains implementation of the repositories abstractions using firebase.
 - @flash-cards/models
 - @flash-cards/repositories
 
-## @flash-cards/services
-contains the services consumed by the application, to decouple the application from the implementations of the abstractions.
-### deps	
-- @flash-cards/repositories
-- @flash-cards/firebase
-
+## @flash-cards/infrastructure
+contains the core services consumed by the application
 ## @flash-cards/ui
 Contains the actual React.JS application
 ### deps: 
 - @flash-cards/models
 - @flash-cards/repositories
-- @flash-cards/services
+- @flash-cards/infrastructure
 

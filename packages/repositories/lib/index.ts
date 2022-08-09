@@ -1,1 +1,1 @@
-export interface RepoTest { };
+export interface RepoTest {}
