@@ -1,9 +1,8 @@
-import { AppConfig } from "@flash-cards/infrastructure";
 import { FirebaseApp, FirebaseOptions, initializeApp } from "firebase/app";
 import { Firestore, getFirestore } from "firebase/firestore";
+import { AppConfig } from "@flash-cards/infrastructure";
 
 export class FirebaseBuilder {
-  // eslint-disable-next-line no-unused-vars, no-empty-function
   constructor(private config: AppConfig) {}
 
   private app: FirebaseApp;
