@@ -7,4 +7,4 @@ yarn format-fix
 echo "------------ Checking Code Style (linting) -----------"
 yarn lint-fix
 echo "------------ Checking Tests -----------"
-yarn test --watchAll=false --findRelatedTests --bail
+yarn test --lastCommit  --bail  --watchAll=false
