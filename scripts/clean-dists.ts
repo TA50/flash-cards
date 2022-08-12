@@ -1,5 +1,5 @@
-const fs = require("fs");
-const path = require("path");
+import fs from "fs";
+import path from "path";
 
 const packagesPath = path.join(__dirname, "..", "packages");
 
@@ -18,7 +18,7 @@ if (packageName) {
     pathesToDelete.push(distPath);
   });
 }
-pathesToDelete.forEach((distPath) => {
+pathesToDelete.forEach((distPath: string) => {
   fs.rm(distPath, { recursive: true }, (err) => {
     if (err) {
       if (err.code !== "ENOENT") {
@@ -26,6 +26,7 @@ pathesToDelete.forEach((distPath) => {
       }
     }
 
+    // eslint-disable-next-line no-console
     console.log(`${distPath} is deleted!`);
   });
 });

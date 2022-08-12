@@ -4,12 +4,23 @@
     "es2021": true,
     "node": true
   },
-  "extends": ["prettier", "plugin:react/recommended", "airbnb"],
+  "extends": [
+    "prettier",
+    "plugin:react/recommended",
+    "airbnb",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking"
+  ],
   "parser": "@typescript-eslint/parser",
   "settings": {
     "import/resolver": {
       "node": {
-        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+        "extensions": [
+          ".js",
+          ".jsx",
+          ".ts",
+          ".tsx"
+        ]
       }
     }
   },
@@ -18,10 +29,25 @@
       "jsx": true
     },
     "ecmaVersion": "latest",
-    "sourceType": "module"
+    "sourceType": "module",
+    "project": [
+      "./tsconfig.json",
+      "./packages/*/tsconfig.json"
+    ],
+    "linterOptions": {
+      "exclude": [
+        "**/*.js"
+      ]
+    }
   },
-  "plugins": ["prettier", "react", "@typescript-eslint"],
+  "plugins": [
+    "prettier",
+    "react",
+    "@typescript-eslint"
+  ],
   "rules": {
+    "@typescript-eslint/no-shadow": "error",
+    "no-shadow": "off",
     "no-useless-constructor": "off",
     "prettier/prettier": [
       "error",
@@ -35,9 +61,15 @@
         "ts": "never"
       }
     ],
-    "quotes": ["warn", "double"],
+    "quotes": [
+      "warn",
+      "double"
+    ],
     "class-methods-use-this": "off",
     "import/prefer-default-export": "off",
-    "linebreak-style": ["error", "windows"]
+    "linebreak-style": [
+      "error",
+      "windows"
+    ]
   }
 }

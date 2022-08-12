@@ -10,6 +10,7 @@
     "test": "yarn wsrun -eyt --report test",
     "build-ui": "yarn workspace @flash-cards/ui build",
     "test-ui": "yarn workspace @flash-cards/ui test",
+    "build-clean": "ts-node ./scripts/clean-dists",
     "build": "yarn wsrun -eyt --report -x @flash-cards/ui  build ",
     "lint": "yarn eslint .",
     "format": "yarn prettier --check .",
@@ -29,6 +30,7 @@
     "eslint-plugin-react-hooks": "^4.3.0",
     "husky": "^8.0.1",
     "prettier": "^2.7.1",
+    "ts-node": "^10.9.1",
     "wsrun": "^5.2.4"
   }
 }
