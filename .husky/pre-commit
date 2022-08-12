@@ -1,0 +1,10 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+
+echo "------------ Checking Formmating -----------"
+yarn format-fix
+echo "------------ Checking Code Style (linting) -----------"
+yarn lint-fix
+echo "------------ Checking Tests -----------"
+yarn test --watchAll=false --findRelatedTests --bail

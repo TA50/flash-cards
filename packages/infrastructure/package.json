@@ -13,6 +13,7 @@
   },
   "scripts": {
     "build": "yarn tsc --build",
+    "test": "echo testing @flash-cards/infrastructure",
     "build-clean": "node ../../processes/clean-dists.js models"
   }
 }

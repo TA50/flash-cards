@@ -1,7 +1,6 @@
+const fs = require("fs");
+const path = require("path");
 
-
-var fs = require('fs');
-const path = require('path');
 const packagesPath = path.join(__dirname, "..", "packages");
 
 const args = process.argv.slice(2);
@@ -14,14 +13,12 @@ if (packageName) {
 } else {
   const dirs = fs.readdirSync(packagesPath);
 
-  dirs.forEach(pkg => {
-
+  dirs.forEach((pkg) => {
     const distPath = path.join(packagesPath, pkg, "dist");
     pathesToDelete.push(distPath);
   });
-
 }
-pathesToDelete.forEach(distPath => {
+pathesToDelete.forEach((distPath) => {
   fs.rm(distPath, { recursive: true }, (err) => {
     if (err) {
       if (err.code !== "ENOENT") {
@@ -31,4 +28,4 @@ pathesToDelete.forEach(distPath => {
 
     console.log(`${distPath} is deleted!`);
   });
-})
+});

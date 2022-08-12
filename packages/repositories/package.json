@@ -9,7 +9,8 @@
   ],
   "scripts": {
     "build": "yarn tsc --build",
-    "build-clean": "node ../../processes/clean-dists.js repositories"
+    "build-clean": "node ../../processes/clean-dists.js repositories",
+    "test": "echo testing @flash-cards/repositories"
   },
   "dependencies": {
     "@flash-cards/models": "1.0.0"
