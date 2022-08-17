@@ -1,14 +1,13 @@
-type Props = {};
-
-function LeftArrowIcon({}: Props) {
+import { HTMLAttributes } from 'react';
+function LeftArrowIcon(props: HTMLAttributes<SVGElement>) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="25"
       height="25"
       fill="black"
-      className="bi bi-chevron-left"
       viewBox="0 0 16 16"
+      {...props}
     >
       <path
         fill-rule="evenodd"

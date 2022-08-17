@@ -1,8 +1,4 @@
-import React from "react";
-
-type Props = {};
-
-function CardViewActions({}: Props) {
+function CardViewActions() {
   return <div>CardViewActions</div>;
 }
 

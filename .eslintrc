@@ -15,7 +15,13 @@
   "settings": {
     "import/resolver": {
       "node": {
-        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+        "extensions": [
+          ".js",
+          ".jsx",
+          ".ts",
+          ".tsx",
+          "css"
+        ]
       }
     }
   },
@@ -25,12 +31,21 @@
     },
     "ecmaVersion": "latest",
     "sourceType": "module",
-    "project": ["./tsconfig.json", "./packages/*/tsconfig.json"],
+    "project": [
+      "./tsconfig.json",
+      "./packages/*/tsconfig.json"
+    ],
     "linterOptions": {
-      "exclude": ["**/*.js"]
+      "exclude": [
+        "**/*.js"
+      ]
     }
   },
-  "plugins": ["prettier", "react", "@typescript-eslint"],
+  "plugins": [
+    "prettier",
+    "react",
+    "@typescript-eslint"
+  ],
   "rules": {
     "@typescript-eslint/no-shadow": "error",
     "no-shadow": "off",
@@ -47,9 +62,15 @@
         "ts": "never"
       }
     ],
-    "quotes": ["warn", "double"],
+    "quotes": [
+      "warn",
+      "double"
+    ],
     "class-methods-use-this": "off",
     "import/prefer-default-export": "off",
-    "linebreak-style": ["error", "windows"]
+    "linebreak-style": [
+      "error",
+      "windows"
+    ]
   }
 }

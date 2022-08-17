@@ -1,0 +1,26 @@
+.icon-button {
+  font-size: large;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  --button-height: 40px;
+  align-items: center;
+}
+
+.icon-button .icon {
+  height: 100%;
+}
+
+.icon-button .icon svg {
+  height: var(--button-height);
+  width: auto;
+}
+
+.icon-button .icon.center {
+  margin: auto;
+}
+
+.icon-button.center {
+  display: grid;
+  place-content: center;
+}
